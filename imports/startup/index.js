@@ -8,6 +8,7 @@ import '../ui/layouts/body/body.js';
 import '../ui/components/loginModal/loginModal.js';
 import '../ui/components/navbar/navbar.js';
 import '../ui/components/addCat/addCat.js';
+import '../ui/components/addCat/addFieldToCat/addFieldToCat.js';
 import '../ui/components/catList/catList.js';
 import '../ui/components/catList/addToCat/addToCat.js';
 

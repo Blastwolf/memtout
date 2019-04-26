@@ -13,8 +13,6 @@ header{
   right:0;
   position:absolute;
 }
-.col-8 #nav-tabContent{
-  max-height: 200px;
-  overflow: scroll;
-  scrollbar-base-color: deepskyblue !important;
+.custom-select{
+  -webkit-appearance: none;
 }

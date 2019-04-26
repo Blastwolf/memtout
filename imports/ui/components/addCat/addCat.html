@@ -14,17 +14,22 @@
                     </div>
                     <div class="modal-body">
                         <form id="addCatForm">
-                            <div class="form-group">
-                                <label for="cat">Nommé votre catégorie :</label>
-                                <input type="text" name="cat" class="form-control" id="cat"
-                                       placeholder="Entrer votre catégorie" autofocus>
-                            </div>
-                            <div class="form-group">
-                                <button type="button" class="close btn btn-secondary" data-dismiss="modal"
-                                        aria-label="Close">Annuler
-                                </button>
-                                <button type="submit" class="btn btn-primary">Valider</button>
-                            </div>
+                            <fieldset>
+                                <div class="form-group">
+                                    <fieldset>
+                                        <label for="cat">Nommé votre catégorie :</label>
+                                        <input type="text" name="cat" class="form-control" id="cat"
+                                               placeholder="Entrer votre catégorie" autofocus>
+                                    </fieldset>
+                                    {{>addFieldToCat}}
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="close btn btn-secondary" data-dismiss="modal"
+                                            aria-label="Close">Annuler
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">Valider</button>
+                                </div>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
