@@ -1,0 +1,14 @@
+<body class="container">
+<header class="text-center jumbotron">
+    <small class="float-right version">alpha 1.0</small>
+    <h1>Bienvenue sur MemTout</h1>
+</header>
+
+<main class="container">
+    {{>navbar}}
+
+    {{#if currentUser}}
+        {{>catList}}
+    {{/if}}
+</main>
+</body>

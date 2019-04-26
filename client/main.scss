@@ -1,0 +1,20 @@
+@import '{}/node_modules/bootswatch/dist/superhero/variables.scss';
+@import '{}/node_modules/bootstrap/scss/bootstrap.scss';
+@import '{}/node_modules/bootswatch/dist/superhero/bootswatch.scss';
+
+body.modal-open div.modal-backdrop {
+  z-index: 0;
+}
+header{
+  position:relative;
+}
+.version{
+  top:0;
+  right:0;
+  position:absolute;
+}
+.col-8 #nav-tabContent{
+  max-height: 200px;
+  overflow: scroll;
+  scrollbar-base-color: deepskyblue !important;
+}
