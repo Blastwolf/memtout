@@ -1,11 +1,17 @@
 <template name="addFieldToCat">
-        <fieldset>
-            <label for="addFieldToForm">Choisissez des champs : </label>
-            <select class="custom-select" name="addFieldToForm" id="addFieldToForm">
-                <option selected="">Choisissez le(s) champ(s) à ajouter</option>
+    <h3>Choisissez des champs : </h3>
+    <fieldset id="inputFields">
+        <div class="form-group">
+            <input type="text" class="form-control labelForField mb-2" name="labelForField0" placeholder="Label à associer à ce champ">
+            <select class="custom-select" name="addFieldToForm" id="addFieldToForm" required>
+                <option selected value="">Choisissez le(s) champ(s) à ajouter</option>
                 <option value="text">Ajouter un champ texte</option>
                 <option value="number">Ajouter un champ nombre</option>
                 <option value="date">Ajouter un champ date</option>
             </select>
-        </fieldset>
+        </div>
+    </fieldset>
+
+    <button class="btn btn-info addField" title="Ajouter un champ" type="button"><i
+            class="fas fa-plus" style="color:white"></i></button>
 </template>

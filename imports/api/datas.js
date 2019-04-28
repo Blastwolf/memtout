@@ -1,6 +1,7 @@
 import {Mongo} from "meteor/mongo";
 import {Meteor} from "meteor/meteor";
 import {check} from "meteor/check";
+import {Match} from "meteor/check"
 
 export const Datas = new Mongo.Collection('datas');
 
@@ -12,9 +13,10 @@ if (Meteor.isServer) {
 
 
 Meteor.methods({
-    'datasUpsertCat'(cat,catNameId) {
+    'datasUpsertCat'(cat,catFields,catNameId) {
         check(cat, String);
         check(catNameId,String);
+        check(catFields,Object);
         if (!cat || !this.userId || !catNameId) {
             throw new Meteor.Error('Il manque probablement un champ ' + cat,catNameId, Meteor.userId());
         }
@@ -22,7 +24,7 @@ Meteor.methods({
         return Datas.upsert({userId: Meteor.userId()},
             {
                 $push: {
-                    cat: {_id: catNameId, catName: cat, list: []}
+                    cat: {_id: catNameId, catName: cat,catFields: catFields, list: []}
                 },
                 $setOnInsert: {
                     userId: this.userId,

@@ -13,16 +13,19 @@
                 </div>
 
                 <div class="modal-body">
-                    <form id="addToCatForm">
-                        <div class="form-group">
-                            <label for="addToCatInput{{_id}}">Ajouter une entrée pour {{catName}}</label>
-                            <input type="text" name="addToCatInput{{_id}}" class="form-control"
-                                   id="addToCatInput{{_id}}"
-                                   aria-describedby="addToCatInput{{_id}}Help" placeholder="Ajouter une entrée">
-                            <small id="addToCatInput{{_id}}Help" class="form-text text-muted">Appuyer sur entrée pour
-                                valider !
-                            </small>
-                        </div>
+                    <form class="addToCatForm">
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="addToCatInput{{_id}}">Ajouter une entrée pour {{catName}}</label>
+                                <input type="text" name="addToCatInput{{_id}}" class="form-control"
+                                       id="addToCatInput{{_id}}"
+                                       aria-describedby="addToCatInput{{_id}}Help" placeholder="Ajouter une entrée">
+                                <small id="addToCatInput{{_id}}Help" class="form-text text-muted">Appuyer sur entrée pour
+                                    valider !
+                                </small>
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="submit" class="btn btn-primary">
                     </form>
                 </div>
             </div>
