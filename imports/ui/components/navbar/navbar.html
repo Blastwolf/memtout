@@ -1,23 +1,21 @@
 <template name="navbar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
-                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav-bar"
+                aria-controls="main-nav-bar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse justify-content-between" id="main-nav-bar">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link">{{>addCat}}</a>
                 </li>
             </ul>
-            <ul class="navbar-nav float-right">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link">{{>loginModal}}</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-
 </template>

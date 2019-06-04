@@ -12,5 +12,9 @@ Tracker.autorun(function(){
 Template.loginModal.events({
     'shown.bs.modal #loginModal'(e,i){
         $('#at-field-email').focus();
-    }
+    },
+    'click .logout'(e,i){
+      Meteor.logout();
+      Session.clear();
+    },
 });

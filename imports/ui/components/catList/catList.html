@@ -1,34 +1,59 @@
 <template name="catList">
-    <div class="row mt-4">
-        <div class="col-4">
-            <div class="list-group" id="list-tab" role="tablist">
-                {{#if getCatListFromDb}}
-                    {{#each cat in getCatListFromDb.cat }}
-                        <a class="list-group-item list-group-item-action" id="list-{{cat._id}}-list" data-toggle="list"
-                           data-target="#list-{{cat._id}}" role="tab" aria-controls="{{cat._id}}">{{cat.catName}}
-                            {{>addToCat cat}}
-                        </a>
-                    {{/each}}
-                {{/if }}
-            </div>
+    {{log this}}
+        {{#let catList=getCatListFromDb}}
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    {{#each cat in catOrderById catList}}
+                        {{#with cat}}
+                                <a class="list-group-item list-group-item-action" id="list-{{cat._id}}-list"
+                                   data-toggle="list"
+                                   data-target="#list-{{cat._id}}" role="tab" aria-controls="{{cat._id}}" data-catid="{{cat._id}}">
+                                    {{cat.catName}}
+                                    <div class="float-right">
+                                        <button class="btn btn-info btn-sm removeCat" title="Supprimer la catégorie"
+                                                type="button"><i
+                                                class="fas fa-minus" style="color:white"></i></button>
+                                        <button type="button" class="btn btn-info addToCatButton"
+                                                title="Ajouter un(e) {{cat.catName}}" data-toggle="modal"
+                                                data-target="#addToCat-{{cat._id}}"><i
+                                                class="fas fa-plus" style="color:white"></i></button>
+                                    </div>
+                                </a>
+                                <div class="modal-container" id="modal-{{cat._id}}">
 
-        </div>
-        <div class="col-8">
-            <div class="tab-content" id="nav-tabContent">
-                {{#if getCatListFromDb}}
-                    {{#each cat in getCatListFromDb.cat }}
+                                </div>
+                        {{/with}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col-lg-8 mt-4 mt-lg-0">
+                <div class="tab-content" id="nav-tabContent">
+                    {{#each cat in catList.cat }}
                         <div class="tab-pane fade show" id="list-{{cat._id}}" role="tabpanel"
                              aria-labelledby="list-{{cat._id}}-list">
-                            <table class="table table-hover">
-                                <tbody>
-                                {{#each cat.list}}
-                                    <tr class="table-info data-list">
-                                        <th scope="row" class="data-list">{{this}}
-                                            <button type="button" class="close" aria-label="Close" title="Supprimer"
-                                                    id="close{{cat._id}}{{@index}}" data-bwid="{{cat._id}}"
-                                                    data-bwindex="{{@index}}">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
+                            <table class="table table-hover table-bordered table-striped text-center">
+                                <thead>
+                                <tr class="table-secondary">
+                                    {{#each field in cat.catFields}}
+                                        <th class="js-field-cell align-middle" title="Cliquez pour changer la valeur !"
+                                            data-catid="{{cat._id}}" data-type="{{field.type}}"
+                                            data-id="{{field._id}}">{{field.label}}</th>
+                                    {{/each}}
+                                    <th class="align-middle" style="width: 10%">Supprimer</th>
+                                </tr>
+                                </thead>
+                                <tbody class="sortable">
+                                {{#each dataOrderById cat}}
+                                    <tr class="table-info data-list" data-id="{{this._id}}" data-catid="{{cat._id}}">
+                                        {{#each data in datas}}
+                                            <th class="data-list js-dataslist-cell"
+                                                title="Cliquez pour changer la valeur !" data-type="{{data.type}}"
+                                                data-id="{{data._id}}">{{data.value}}</th>
+                                        {{/each}}
+                                        <th class="text-center delete" style="width:10%;color:#43505D;"
+                                            data-catid="{{cat._id}}">
+                                            X
                                         </th>
                                     </tr>
                                 {{/each}}
@@ -36,8 +61,8 @@
                             </table>
                         </div>
                     {{/each}}
-                {{/if }}
+                </div>
             </div>
         </div>
-    </div>
+        {{/let}}
 </template>

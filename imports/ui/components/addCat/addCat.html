@@ -13,23 +13,19 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="addCatForm">
-                            <fieldset>
+                        <form id="addCatForm" class="test">
                                 <div class="form-group">
-                                    <fieldset>
                                         <label for="cat">Nommé votre catégorie :</label>
                                         <input type="text" name="cat" class="form-control" id="cat"
-                                               placeholder="Entrer votre catégorie" autofocus>
-                                    </fieldset>
+                                               placeholder="Entrer votre catégorie" required autofocus>
                                     {{>addFieldToCat}}
                                 </div>
                                 <div class="form-group">
                                     <button type="button" class="close btn btn-secondary" data-dismiss="modal"
                                             aria-label="Close">Annuler
                                     </button>
-                                    <button type="submit" class="btn btn-primary">Valider</button>
+                                    <button type="submit" class="btn btn-primary" id="submit">Valider</button>
                                 </div>
-                            </fieldset>
                         </form>
                     </div>
                 </div>

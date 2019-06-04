@@ -16,3 +16,16 @@ header{
 .custom-select{
   -webkit-appearance: none;
 }
+
+.js-dataslist-cell,.delete{
+  cursor: pointer;
+    &:hover{
+      background-color: #5F84E8 !important;
+    }
+}
+.js-field-cell{
+  cursor:pointer;
+}
+.ui-sortable-helper {
+  display: table;
+}
