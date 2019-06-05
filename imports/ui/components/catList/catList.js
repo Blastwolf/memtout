@@ -206,6 +206,7 @@ Template.catList.events({
                         }
                         if(r){
                             modale.modal('hide');
+                            elem.html(r);
                         }
                     });
 

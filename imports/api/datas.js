@@ -78,7 +78,6 @@ Meteor.methods({
       return Datas.update({userId:this.userId},{$pull:{"cat":{_id:catId},"catPosOrder":catId}});
     },
     'updateDataFromCat'(dataId,datasId,catNameId,newValue){
-        if(Meteor.isServer){
             check(dataId,String);
             check(datasId,String);
             check(catNameId,String);
@@ -87,7 +86,10 @@ Meteor.methods({
                 throw new Meteor.Error('Vous devez être connecté.');
             }
             if(/^ *$/.test(newValue))throw new Meteor.Error('Le champ est vide !');
-
+        if(Meteor.isSimulation){
+            return newValue;
+        }
+        if(Meteor.isServer){
             return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
                 {arrayFilters:[{"e._id":datasId},{"i._id":dataId}]}).then((res)=>{
                 if(res.result.nModified ===1){
