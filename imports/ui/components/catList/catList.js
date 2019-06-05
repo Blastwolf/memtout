@@ -1,7 +1,5 @@
 import {Meteor} from "meteor/meteor";
 import {Datas} from "../../../api/datas";
-import {Tracker} from "meteor/tracker";
-import {_} from"meteor/underscore";
 import './catList.html';
 
 Template.catList.onCreated(function onCreatedCatList() {
@@ -18,10 +16,9 @@ Template.catList.onRendered(function () {
             $('#list-tab').sortable();
             let catListElem = $('div#list-tab').find('a');
 
-            let firstCatElem = $('div#list-tab').find('a').first();
+            let firstCatElem = catListElem.first();
 
             if(!catListElem.hasClass('active')){
-                //firstCatElem.addClass('active');
                 firstCatElem.tab('show')
             }
     });
@@ -32,7 +29,6 @@ Template.catList.onRendered(function () {
     let dataList = document.getElementById('nav-tabContent');
     let observerData = new MutationObserver(function(mutations){
         $('.sortable').sortable();
-        console.log('in mutations shit',mutations)
     });
     observerData.observe(dataList,{childList:true});
 
@@ -46,7 +42,6 @@ Template.catList.helpers({
         return Datas.findOne({userId: Meteor.userId()});
     },
     catOrderById(doc){
-        if(doc)console.log(doc);
         if(doc){
             let posOrder = doc.catPosOrder;
             let list = doc.cat;
@@ -58,8 +53,8 @@ Template.catList.helpers({
                 }
                 temp.push(list[e]);
             }
-            doc.cat = temp;
-            return doc.cat;
+
+            return temp;
         }
     },
     dataOrderById(catList){
@@ -74,7 +69,6 @@ Template.catList.helpers({
                 }
                 temp.push(list[e]);
             }
-            // catList.list = temp;
             return temp;
         }
     },
@@ -89,7 +83,6 @@ Template.catList.events({
         if(confirm('Voulez vous vraiment supprimer cette ligne ?')){
             Meteor.call('removeDataFromCat', elemDatasId, elemId, function (e, r) {
                 if (e) console.log(e);
-                if (r) console.log(r);
             });
         }
 
@@ -142,8 +135,6 @@ Template.catList.events({
         let inputValue = $('form.catForm').find('input');
         let catData = this;
         let catNameId = catData._id;
-        let pos = $(`#list-${catNameId}`).find('tr.data-list').length +1;
-        console.log(pos,catData);
         let datas = [];
         inputValue.each(function (i, e) {
             let type = $(e).attr('type');
@@ -156,7 +147,6 @@ Template.catList.events({
 
         let catListInsertObj = {
             _id: id._str,
-            pos:pos,
             datas: datas
         };
 
@@ -165,7 +155,6 @@ Template.catList.events({
         Meteor.call('insertToCat',catListInsertObj, catNameId, function (error, r) {
             if (error) console.log(error);
             if (r) {
-                console.log('success !', r);
                 $(eventTargetModal).modal('hide');
             }
         });
@@ -217,7 +206,6 @@ Template.catList.events({
                         }
                         if(r){
                             modale.modal('hide');
-                            console.log(r);
                         }
                     });
 
@@ -279,7 +267,7 @@ Template.catList.events({
                         type:type,
                     };
                     Meteor.call('updateCatField',catId,elem.attr('data-id'),newField,function(err,res){
-                        console.log(err,res);
+                        console.log('html clean');
                     });
                     modal.modal('hide');
                 })
@@ -292,7 +280,6 @@ Template.catList.events({
         if(confirm(`Voulez vous vraiment supprimer la catégorie "${catName}" ?`)){
             Meteor.call('removeCatFromList',catId,function(err,res){
                 if(err)console.log(err);
-                if(res)console.log(res);
             })
         }
     },
@@ -300,37 +287,30 @@ Template.catList.events({
         $('.modal').find('input:first').focus();
     },
     'hide.bs.modal .modal'(e, i) {
-        console.log('html clean');
         $('.js-modal').remove();
     },
     'sortstop .sortable'(e,i,ui){
-        console.log('in update cl',e,i,ui);
 
         let rows =$(e.target).find('tr.data-list');
         let catNameId= rows.attr('data-catid');
-        console.log(catNameId);
         let sortArr = [];
         rows.each(function(i,e){
             sortArr.push($(e).attr('data-id'));
-            console.log('each func',e,i);
         });
-        console.log(sortArr);
 
         Meteor.call('dataUpdatePosition',sortArr,catNameId,function(err,res){
-            console.log(err,res);
+            if(err)console.log(err);
         })
     },
     'sortstop #list-tab'(e,i,ui){
        let rows = $(e.target).find('a');
        let sortArr=[];
-       console.log(rows);
        rows.each(function(i,e){
            sortArr.push($(e).attr('data-catid'));
        });
 
-        console.log(sortArr);
         Meteor.call('catUpdatePosition',sortArr,function(err,res){
-            console.log(err,res);
+            if(err)console.log(err);
         })
     }
 });

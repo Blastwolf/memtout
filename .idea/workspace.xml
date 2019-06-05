@@ -3,23 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="7985bc54-13f3-4df7-9179-1ea479e403c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/api/datas.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/api/datas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/startup/accounts_config.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/accounts_config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/addCat/addCat.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/addCat/addCat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/addCat/addCat.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/addCat/addCat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/startup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/startup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/components/catList/catList.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/catList/catList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imports/ui/components/catList/catList.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/catList/catList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/navbar/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/layouts/body/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/layouts/body/body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/layouts/body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/layouts/body/body.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +23,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/layouts/body/body.html">
+        <entry file="file://$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="558">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,32 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.meteor/versions">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="114" column="20" lean-forward="true" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addCat.js">
+        <entry file="file://$PROJECT_DIR$/imports/startup/accounts_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="31">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#59#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addCat.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -84,22 +61,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/startup/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state relative-caret-position="105">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#51#75#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/imports/api/datas.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="75" column="64" lean-forward="true" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#267#303#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="868">
               <caret line="28" column="19" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="19" />
             </state>
           </provider>
@@ -117,8 +83,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/catList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="31">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/imports/registerHelpers/registerHelpers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -126,11 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/catList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="62">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -143,6 +133,7 @@
       <find>autopre</find>
       <find>console.log</find>
       <find>T9n</find>
+      <find>{{log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,7 +149,6 @@
         <option value="$PROJECT_DIR$/imports/api/datasMethods.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/registerHelpers/registerHelpers.js" />
         <option value="$PROJECT_DIR$/imports/registerHelpers/registerHelpers.js" />
-        <option value="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.js" />
         <option value="$PROJECT_DIR$/trash.js" />
@@ -166,29 +156,30 @@
         <option value="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.html" />
         <option value="$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.html" />
-        <option value="$PROJECT_DIR$/imports/ui/layouts/body/body.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.js" />
         <option value="$PROJECT_DIR$/lib/accounts-config.js" />
-        <option value="$PROJECT_DIR$/imports/startup/index.js" />
         <option value="$PROJECT_DIR$/imports/startup/accounts_config.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/addCat/addCat.js" />
         <option value="$PROJECT_DIR$/imports/ui/components/navbar/navbar.html" />
-        <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
-        <option value="$PROJECT_DIR$/imports/ui/components/catList/catList.html" />
-        <option value="$PROJECT_DIR$/imports/api/datas.js" />
         <option value="$PROJECT_DIR$/client/main.scss" />
-        <option value="$PROJECT_DIR$/imports/ui/components/catList/catList.js" />
         <option value="$PROJECT_DIR$/imports/ui/layouts/body/body.html" />
         <option value="$PROJECT_DIR$/server/main.js" />
         <option value="$PROJECT_DIR$/.meteor/versions" />
+        <option value="$PROJECT_DIR$/imports/api/datas.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.html" />
+        <option value="$PROJECT_DIR$/imports/ui/layouts/body/body.js" />
+        <option value="$PROJECT_DIR$/imports/startup/index.js" />
+        <option value="$PROJECT_DIR$/imports/ui/components/catList/catList.html" />
+        <option value="$PROJECT_DIR$/imports/ui/components/catList/catList.js" />
+        <option value="$PROJECT_DIR$/client/main.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="y" value="258" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1294" />
     <option name="height" value="733" />
   </component>
@@ -206,11 +197,6 @@
             <path>
               <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
               <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name=".meteor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
@@ -259,69 +245,7 @@
               <item name="imports" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="addCat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="addCat" type="462c0819:PsiDirectoryNode" />
-              <item name="addFieldToCat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="catList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="catList" type="462c0819:PsiDirectoryNode" />
-              <item name="addToCat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="loginModal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="imports" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-              <item name="body" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MemTout" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MemTout" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -440,12 +364,12 @@
       <workItem from="1559470200582" duration="30618000" />
       <workItem from="1559556188279" duration="1618000" />
       <workItem from="1559575742202" duration="2622000" />
-      <workItem from="1559657049155" duration="13547000" />
+      <workItem from="1559657049155" duration="15990000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451721000" />
+    <option name="totallyTimeSpent" value="454164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,7 +390,7 @@
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.8020154" visible="true" weight="0.36231884" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.8020154" visible="true" weight="0.21850613" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50053304" side_tool="true" weight="0.3690078" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49946696" weight="0.580825" />
@@ -526,21 +450,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/accounts-config.js" />
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/local/db/METEOR-PORT">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -649,6 +559,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="333" column="24" lean-forward="true" selection-start-line="333" selection-start-column="24" selection-end-line="333" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/versions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3565">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/api/datas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1978">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/addToCat/addToCat.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
@@ -666,17 +614,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="333" column="24" lean-forward="true" selection-start-line="333" selection-start-column="24" selection-end-line="333" selection-end-column="24" />
+        <state relative-caret-position="217">
+          <caret line="7" column="86" selection-start-line="7" selection-start-column="86" selection-end-line="7" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/navbar/navbar.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addFieldToCat/addFieldToCat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="-104">
+          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addCat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addCat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-414">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -687,143 +659,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.html">
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/body/body.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="434">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/accounts_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/registerHelpers/registerHelpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
+    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/body/body.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/navbar/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/components/loginModal/loginModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="558">
           <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/body/body.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/startup/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="e#51#75#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addCat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/addCat/addCat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/api/datas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="75" column="64" lean-forward="true" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/catList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/catList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/layouts/body/body.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -837,10 +700,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/versions">
+    <entry file="file://$PROJECT_DIR$/imports/startup/accounts_config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="114" column="20" lean-forward="true" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+        <state relative-caret-position="31">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/startup/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#51#75#0" expanded="true" />
+            <element signature="e#267#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/registerHelpers/registerHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/catList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/components/catList/catList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>

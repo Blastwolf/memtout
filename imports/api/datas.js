@@ -49,7 +49,6 @@ Meteor.methods({
     'insertToCat'(dataToInsert, catNameId) {
         check(dataToInsert,{
             _id:String,
-            pos:Number,
             datas:Match.Maybe([{_id:String,type:String,value:Match.OneOf(String,Number)}]),
         });
         check(catNameId, String);
@@ -64,9 +63,10 @@ Meteor.methods({
         check(datasId, String);
         check(catNameId, String);
 
-        if (!datasId || !this.userId) {
-            throw new Meteor.Error('Il manque probablement un champ ' + [datasId, catNameId, Meteor.userId()]);
+        if (!this.userId) {
+            throw new Meteor.Error('Vous devez être connecté.');
         }
+
         return Datas.update({userId: this.userId,"cat._id": catNameId}, {$pull: {"cat.$.list":{_id:datasId},"cat.$.posOrder":datasId}});
     },
     'removeCatFromList'(catId){

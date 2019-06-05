@@ -10,7 +10,6 @@ import '../ui/components/navbar/navbar.js';
 import '../ui/components/addCat/addCat.js';
 import '../ui/components/addCat/addFieldToCat/addFieldToCat.js';
 import '../ui/components/catList/catList.js';
-import '../ui/components/catList/addToCat/addToCat.js';
 
 //-----------------RegisterHelpers--------------//
 import '../registerHelpers/registerHelpers.js';
