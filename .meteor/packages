@@ -28,3 +28,7 @@ useraccounts:bootstrap
 accounts-password
 meteortoys:allthings
 reactive-dict
+mrt:jquery-ui-sortable
+
+
+underscore

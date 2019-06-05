@@ -75,6 +75,7 @@ mongo@1.6.2
 mongo-decimal@0.1.1
 mongo-dev-server@1.1.0
 mongo-id@1.0.7
+mrt:jquery-ui-sortable@1.10.3
 msavin:jetsetter@4.0.0
 msavin:mongol@7.0.1
 npm-bcrypt@0.9.3
