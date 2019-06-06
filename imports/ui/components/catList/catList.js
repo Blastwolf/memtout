@@ -199,7 +199,7 @@ Template.catList.events({
             $('#change-cell-value').on('submit',function(e){
                 e.preventDefault();
                 let newValue = $('#new-value').val();
-                let instaRes =  Meteor.call('updateDataFromCat',dataId,datasId,catNameId,newValue);
+                let instaRes =  Meteor.apply('updateDataFromCat',[dataId,datasId,catNameId,newValue],{returnStubValue:true});
                 modale.modal('hide');
                 console.log(elem.text());
                 console.log('new value from input',newValue);
