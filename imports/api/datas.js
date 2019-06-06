@@ -102,12 +102,6 @@ Meteor.methods({
                 });
             }
 
-
-
-
-
-
-
     },
     'updateCatField'(catNameId,fieldId,newFieldData){
         check(catNameId,String);

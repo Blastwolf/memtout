@@ -203,6 +203,7 @@ Template.catList.events({
                 modale.modal('hide');
                 console.log(elem.text());
                 console.log('new value from input',newValue);
+                console.log(instaRes);
                 elem.text(instaRes);
             });
 
