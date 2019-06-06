@@ -88,17 +88,21 @@ Meteor.methods({
             if(/^ *$/.test(newValue))throw new Meteor.Error('Le champ est vide !');
 
             if(this.isSimulation){
-                return newValue;
+                console.log('this is simulation ?',this.isSimulation);
+                return 'lol';
             }else{
-                return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
+                console.log('c"est quoi ca');
+               return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
                     {arrayFilters:[{"e._id":datasId},{"i._id":dataId}]}).then((res)=>{
                     if(res.result.nModified ===1){
-                        return true;
+                        return 'lol';
                     }
                 }).catch(function(res){
                     throw new Meteor.Error(res.errmsg);
                 });
             }
+
+
 
 
 
@@ -120,7 +124,6 @@ Meteor.methods({
             throw new Meteor.Error('Vous devez être connecté.');
         }
 
-        if(Meteor.isServer){
             return Datas.rawCollection().update({userId: this.userId, "cat._id": catNameId}, {$set: {"cat.$.catFields.$[e]": newFieldData}},{
                 arrayFilters:[{"e._id":fieldId}]}).then((res)=>{
                 if(res.result.nModified ===1){
@@ -129,7 +132,6 @@ Meteor.methods({
             }).catch(function(res){
                 throw new Meteor.Error(res.errmsg);
             });
-        }
     },
     'dataUpdatePosition'(posArr,catNameId){
         check(posArr,[String]);
