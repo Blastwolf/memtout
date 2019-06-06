@@ -88,8 +88,8 @@ Meteor.methods({
             if(/^ *$/.test(newValue))throw new Meteor.Error('Le champ est vide !');
 
             if(this.isSimulation){
-                console.log('this is simulation ?',this.isSimulation);
-                return 'lol';
+                console.log('this is simulation ?',this.isSimulation,newValue);
+                return newValue;
             }else{
                 console.log('c"est quoi ca');
                return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
