@@ -204,10 +204,11 @@ Template.catList.events({
                             $(modale).find('.help-block').text(e.message);
                             console.log(e);
                         }
+
                         if(r){
                             modale.modal('hide');
                             console.log(elem,elem.text(),r);
-                            elem.val(newValue);
+                            elem.html(newValue);
                         }
                     });
 
