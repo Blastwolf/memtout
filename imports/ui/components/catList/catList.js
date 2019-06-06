@@ -199,12 +199,18 @@ Template.catList.events({
             $('#change-cell-value').on('submit',function(e){
                 e.preventDefault();
                 let newValue = $('#new-value').val();
-                let instaRes =  Meteor.apply('updateDataFromCat',[dataId,datasId,catNameId,newValue],{returnStubValue:true});
-                modale.modal('hide');
-                console.log(elem.text());
-                console.log('new value from input',newValue);
-                console.log(instaRes);
-                elem.text(instaRes);
+                Meteor.call('updateDataFromCat',dataId,datasId,catNameId,newValue,function(err,res){
+                    if(err)console.log(err);
+                    if(res){
+                        modale.modal('hide');
+                        console.log('ampja')
+                    }
+                });
+                // modale.modal('hide');
+                // console.log(elem.text());
+                // console.log('new value from input',newValue);
+                // console.log(instaRes);
+                // elem.text(instaRes);
             });
 
     },

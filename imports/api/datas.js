@@ -87,20 +87,41 @@ Meteor.methods({
             }
             if(/^ *$/.test(newValue))throw new Meteor.Error('Le champ est vide !');
 
-            if(this.isSimulation){
-                console.log('this is simulation ?',this.isSimulation,newValue);
-                return newValue;
-            }else{
-                console.log('c"est quoi ca');
-               return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
-                    {arrayFilters:[{"e._id":datasId},{"i._id":dataId}]}).then((res)=>{
-                    if(res.result.nModified ===1){
-                        return 'lol';
+            // if(this.isSimulation){
+            //     console.log('this is simulation ?',this.isSimulation,newValue);
+            //     return newValue;
+            // }else{
+            //     console.log('c"est quoi ca');
+            //    return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
+            //         {arrayFilters:[{"e._id":datasId},{"i._id":dataId}]}).then((res)=>{
+            //         if(res.result.nModified ===1){
+            //             return 'lol';
+            //         }
+            //     }).catch(function(res){
+            //         throw new Meteor.Error(res.errmsg);
+            //     });
+            // }
+        const dataList = Datas.findOne({userId:this.userId});
+
+        console.log('ezfzef',dataList);
+        dataList.cat = dataList.cat.map((e)=>{
+            if(e._id===catNameId){
+                console.log(e.list);
+
+                e.list.map((e)=>{
+                    if(e._id===datasId){
+                        console.log('datas',e);
+                        e.datas.map((e)=>{
+                            if(e._id===dataId){
+                                e.value = newValue;
+                            }
+                        })
                     }
-                }).catch(function(res){
-                    throw new Meteor.Error(res.errmsg);
-                });
+                })
             }
+            return e;
+        })
+       return Datas.update({userId:this.userId},dataList);
 
     },
     'updateCatField'(catNameId,fieldId,newFieldData){
