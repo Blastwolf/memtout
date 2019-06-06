@@ -87,16 +87,22 @@ Meteor.methods({
             }
             if(/^ *$/.test(newValue))throw new Meteor.Error('Le champ est vide !');
 
-        if(Meteor.isServer){
-            return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
-                {arrayFilters:[{"e._id":datasId},{"i._id":dataId}]}).then((res)=>{
-                if(res.result.nModified ===1){
-                    return newValue;
-                }
-            }).catch(function(res){
-                throw new Meteor.Error(res.errmsg);
-            });
-        }
+            if(this.isSimulation){
+                return newValue;
+            }else{
+                return Datas.rawCollection().update({userId: this.userId,"cat._id": catNameId},{$set:{"cat.$.list.$[e].datas.$[i].value":newValue}},
+                    {arrayFilters:[{"e._id":datasId},{"i._id":dataId}]}).then((res)=>{
+                    if(res.result.nModified ===1){
+                        return true;
+                    }
+                }).catch(function(res){
+                    throw new Meteor.Error(res.errmsg);
+                });
+            }
+
+
+
+
 
     },
     'updateCatField'(catNameId,fieldId,newFieldData){
