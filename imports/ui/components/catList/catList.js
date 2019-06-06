@@ -207,7 +207,7 @@ Template.catList.events({
                         if(r){
                             modale.modal('hide');
                             console.log(elem,elem.text(),r);
-                            elem.text("");
+                            elem.val(newValue);
                         }
                     });
 
