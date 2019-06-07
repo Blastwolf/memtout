@@ -24,15 +24,12 @@ Template.catList.onRendered(function () {
     });
     observerCat.observe(catList,{childList:true});
 
-
     //----------------------DRAG AND DROP REACTIVITY ON DATALIST-----------------------------//
     let dataList = document.getElementById('nav-tabContent');
     let observerData = new MutationObserver(function(mutations){
         $('.sortable').sortable();
     });
     observerData.observe(dataList,{childList:true});
-
-
 
 });
 
@@ -53,7 +50,6 @@ Template.catList.helpers({
                 }
                 temp.push(list[e]);
             }
-
             return temp;
         }
     },
@@ -200,17 +196,11 @@ Template.catList.events({
                 e.preventDefault();
                 let newValue = $('#new-value').val();
                 Meteor.call('updateDataFromCat',dataId,datasId,catNameId,newValue,function(err,res){
-                    if(err)console.log(err);
+                    if(err)$(modale).find('.help-block').text(err.message);
                     if(res){
                         modale.modal('hide');
-                        console.log('ampja')
                     }
                 });
-                // modale.modal('hide');
-                // console.log(elem.text());
-                // console.log('new value from input',newValue);
-                // console.log(instaRes);
-                // elem.text(instaRes);
             });
 
     },
@@ -269,9 +259,9 @@ Template.catList.events({
                         type:type,
                     };
                     Meteor.call('updateCatField',catId,elem.attr('data-id'),newField,function(err,res){
-                        console.log('html clean');
+                        if(err)console.log(err);
+                        if(res)modal.modal('hide');
                     });
-                    modal.modal('hide');
                 })
     },
     //-----------------------------------------Delete a cat---------------------//
