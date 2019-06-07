@@ -94,7 +94,7 @@ Template.catList.events({
             catFieldsHtml +=
                 `<div class="form-group">
                     <label for="input-${labelWithoutSpace}">${e.label} :</label>
-                    <input type="${e.type}" class="form-control" name="input-${labelWithoutSpace}" id="input-${labelWithoutSpace}" required>
+                    <input type="${e.type}" class="form-control" name="input-${labelWithoutSpace}" id="input-${labelWithoutSpace}" autocomplete="off" required>
                 </div>`;
         });
         //On selectionne le container modal qui correspond au bouton click
@@ -178,7 +178,7 @@ Template.catList.events({
                             <form id="change-cell-value" class="change-value" role="form">
                                 <div class="form-group">
                                     <span class="help-block"></span>
-                                    <input type="${elem.attr('data-type')}" class="form-control" name="new-value" id="new-value" value="${currentValue}" required>
+                                    <input type="${elem.attr('data-type')}" class="form-control" name="new-value" id="new-value" value="${currentValue}" autocomplete="off" required>
                                 </div> 
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary" >Valider</button>
@@ -227,7 +227,7 @@ Template.catList.events({
                             <form id="change-field-value" class="change-value" role="form">
                                 <div class="form-group">
                                     <label for="labelForField">Changez la valeur du champ :</label>
-                                    <input type="text" id="new-value" class="form-control labelForField mb-3" name="labelForField" value="${elem.text().replace(/"/g,'&quot;')}" required>
+                                    <input type="text" id="new-value" class="form-control labelForField mb-3" name="labelForField" value="${elem.text().replace(/"/g,'&quot;')}" autocomplete="off" required>
                             
                                            <select class="custom-select" name="changeFieldValue" id="changeFieldValue" required>
                                                 <option selected value="">Choisissez le(s) champ(s) à ajouter</option>
