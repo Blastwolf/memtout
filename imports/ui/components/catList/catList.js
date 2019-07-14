@@ -81,7 +81,6 @@ Template.catList.events({
                 if (e) console.log(e);
             });
         }
-
     },
     //----------------Event qui affiche le formulaire d'ajout d'entrée----------------//
     //--------------------------------------------------------------------------------//
@@ -180,6 +179,7 @@ Template.catList.events({
                                     <span class="help-block"></span>
                                     <input type="${elem.attr('data-type')}" class="form-control" name="new-value" id="new-value" value="${currentValue}" autocomplete="off" required>
                                 </div> 
+                         
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-primary" >Valider</button>
                                     <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">Annuler</button>
@@ -207,6 +207,13 @@ Template.catList.events({
     'click .js-field-cell'(e,i){
         let catId = $(e.target).attr('data-catid');
         let elem = $(e.target);
+        let elemType = elem.attr('data-type');
+        let checkType = function(elem,type,string){
+            if(elem === type){
+                return string;
+            }
+            return '';
+        };
 
         let modal = $(`<div class="modal js-modal fade change-value" id="change-value" tabindex="-1" role="dialog">`).html(`
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -221,7 +228,7 @@ Template.catList.events({
                         <div class="modal-body">
                             <div>
                                 <p class="text-primary">Nom de champ actuel : <span class="text-info">${elem.text()}</span></p>
-                                <p class="text-primary">Type du champ actuel : <span class="text-info">${elem.attr('data-type')}</span></p>
+                                <p class="text-primary">Type du champ actuel : <span class="text-info">${elemType}</span></p>
                             </div>
                         
                             <form id="change-field-value" class="change-value" role="form">
@@ -229,12 +236,25 @@ Template.catList.events({
                                     <label for="labelForField">Changez la valeur du champ :</label>
                                     <input type="text" id="new-value" class="form-control labelForField mb-3" name="labelForField" value="${elem.text().replace(/"/g,'&quot;')}" autocomplete="off" required>
                             
-                                           <select class="custom-select" name="changeFieldValue" id="changeFieldValue" required>
-                                                <option selected value="">Choisissez le(s) champ(s) à ajouter</option>
-                                                <option value="text">Ajouter un champ texte</option>
-                                                <option value="number">Ajouter un champ nombre</option>
-                                                <option value="date">Ajouter un champ date</option>
-                                           </select>   
+                                           <!--<select class="custom-select" name="changeFieldValue" id="changeFieldValue" required>-->
+                                                <!--<option selected value="">Choisissez le(s) champ(s) à ajouter</option>-->
+                                                <!--<option value="text">Ajouter un champ texte</option>-->
+                                                <!--<option value="number">Ajouter un champ nombre</option>-->
+                                                <!--<option value="date">Ajouter un champ date</option>-->
+                                           <!--</select>   -->
+                                           <div class="text-center">
+                                               <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                      <label class="btn btn-outline-info ${checkType(elemType,'text','active')} mr-3">
+                                                           <input type="radio" name="changeFieldValue" class="js-field-type-change" value="text" autocomplete="off" ${checkType(elemType,'text','checked')}>Text
+                                                      </label>
+                                                      <label class="btn btn-outline-info ${checkType(elemType,'number','active')} mr-3">
+                                                                <input type="radio" name="changeFieldValue" class="js-field-type-change" value="number" autocomplete="off" ${checkType(elemType,'number','checked')}>Nombre
+                                                      </label>
+                                                      <label class="btn btn-outline-info ${checkType(elemType,'date','active')} mr-3">
+                                                           <input type="radio" name="changeFieldValue" class="js-field-type-change" value="date" autocomplete="off" ${checkType(elemType,'date','checked')}>Date
+                                                      </label>
+                                               </div>
+                                           </div>
                                 </div>
                                  
                                 <div class="form-group">
@@ -251,8 +271,8 @@ Template.catList.events({
                 $('#change-field-value').on('submit',function(ev){
                     ev.preventDefault();
                     let label = $('#new-value').val();
-                    let type = $('#changeFieldValue').val();
-                    console.log(type);
+                    let type = $('.js-field-type-change:checked').val();
+
                     let newField = {
                         _id:elem.attr('data-id'),
                         label:label,
